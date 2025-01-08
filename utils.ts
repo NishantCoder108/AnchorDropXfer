@@ -44,3 +44,12 @@ function walletToBase58() {
     }
 }
 walletToBase58();
+
+/*
+//* Create the PDA for our enrollment account
+const enrollment_seeds = [Buffer.from("prereq"), keypair.publicKey.toBuffer()];
+const [enrollment_key, _bump] = PublicKey.findProgramAddressSync(
+    enrollment_seeds,
+    program.programId
+);
+*/
