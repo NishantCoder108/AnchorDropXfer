@@ -26,3 +26,7 @@ const connection = new Connection("https://api.devnet.solana.com");
     const balance = await connection.getBalance(keypair.publicKey);
     console.log("Balance: ", balance);
 })();
+
+/*
+Tx Signature : https://explorer.solana.com/tx/3rDDsgcC5dUmw277W69dxfVSyeRDRHwKYj4C6C65ecCUTPEpqRiUgAhSjpj4yhRB3CSfbpf5fkgPTpJRQvrvYhuV?cluster=devnet
+*/
