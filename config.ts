@@ -22,7 +22,12 @@ function walletToBase58() {
     try {
         const parseWallet = wallet.split(",").map((x) => parseInt(x));
         console.log("Parse Wallet: ", parseWallet);
-        const base58Encode = bs58.encode(Uint8Array.from(parseWallet));
+        // const base58Encode = bs58.encode(new Uint8Array( [
+        //     72, 105,  32, 78,
+        //    105, 115, 104, 97,
+        //    110, 116
+        //  ]));
+        const base58Encode = bs58.encode(Uint8Array.from(wallet));
         console.log("Wallet: ", base58Encode.toString());
     } catch (error) {
         console.log("Invalid wallet");
